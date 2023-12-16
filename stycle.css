@@ -39,7 +39,7 @@ article h3 {
     margin-bottom: 10px;
 }
 
-/* Contact Form Styles */
+
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
