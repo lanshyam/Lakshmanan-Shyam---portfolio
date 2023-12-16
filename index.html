@@ -7,46 +7,39 @@
     <title>Lakshmanan Shyam - Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Lakshmanan Shyam</h1>
-        <p>Enthusiastic Software Engineering student at Western University</p>
-    </header>
+    <!-- Home Section -->
+    <section id="home">
+        <header>
+            <h1>Lakshmanan Shyam</h1>
+            <p>Enthusiastic Software Engineering student at Western University</p>
+        </header>
+    </section>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Actively seeking opportunities to enhance proficiency in data analysis and software development.</p>
+        <p>Hi there! I am Lakshmanan Shyam, a passionate Software Engineering student at Western University. My journey in the world of software development has been both challenging and rewarding.</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <ul>
-            <li>Email: lan.shyam@gmail.com</li>
-            <li>Phone: 519-701-9879</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/lakshmanan-shyam-270794248/" target="_blank">LinkedIn Profile</a></li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+            <h3>ChatBuddy | May 2023</h3>
+            <p>Developed a Python-based private chat interface connecting two clients. Employed socket and threading libraries, with a server serving as an intermediary.</p>
+        </article>
+
+        <article>
+            <h3>Railway Management System | Jan 2022</h3>
+            <p>Created a Python-based interface for administrators and customers, enabling ticket booking, validation, and cancellation. Integrated the system with MySQL for efficient storage of train and passenger data.</p>
+        </article>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Western University | Sep 2022 – Present</li>
-            <li>Bachelor of Engineering Sciences in Software Engineering</li>
-            <li>Relevant Courses: Data Structures and Algorithms, Scripting Programming Language, Software Design, Software Construction, Programming Fundamentals</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Python, JavaScript, Java, Swift, R, HTML, CSS, MATLAB, MySQL</li>
-            <li>Developer Tools: Git, GitHub, VS Code, PyCharm, IntelliJ, Node.js</li>
-            <li>Soft Skills: Strong leadership and management skills, exceptional communication, and team working abilities</li>
-        </ul>
-    </section>
-
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        
+
         <article>
             <h3>Website Development | May-August 2023</h3>
             <p>Successfully designed and developed 20 websites for various restaurants and businesses. Meticulously refined each website meeting the business’ needs.</p>
@@ -63,45 +56,16 @@
         </article>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <article>
-            <h3>ChatBuddy | May 2023</h3>
-            <p>Developed a Python-based private chat interface connecting two clients. Employed socket and threading libraries, with a server serving as an intermediary.</p>
-        </article>
-
-        <article>
-            <h3>Railway Management System | Jan 2022</h3>
-            <p>Created a Python-based interface for administrators and customers, enabling ticket booking, validation, and cancellation. Integrated the system with MySQL for efficient storage of train and passenger data.</p>
-        </article>
-    </section>
-
-    <section id="certificates">
-        <h2>Professional Certificates</h2>
-        <ul>
-            <li>Google Data Analytics Certificate</li>
-            <li>Meta Introduction to Professional Back-end Development Certificate</li>
-        </ul>
-    </section>
-
-    <section id="additional-experience">
-        <h2>Additional Experience</h2>
-        
-        <article>
-            <h3>Hackathon | Toronto FVM open hack day 2023</h3>
-            <p>Played a vital role in the success of the hackathon.</p>
-        </article>
-
-        <article>
-            <h3>Volunteer Work | High school Ecology Club</h3>
-            <p>Volunteered for 2 years in the Ecology Club during high school.</p>
-        </article>
-    </section>
-
-
-    <section id="contact-form">
+    <!-- Contact Me Section -->
+    <section id="contact">
         <h2>Contact Me</h2>
+        <ul>
+            <li>Email: lan.shyam@gmail.com</li>
+            <li>Phone: 519-701-9879</li>
+            <li>LinkedIn: <a href="your LinkedIn profile link" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+
+        <!-- Contact Form -->
         <form name="contact" action="/.netlify/functions/contact" method="post">
             <label for="recruiterName">Your Name:</label>
             <input type="text" id="recruiterName" name="recruiterName" required>
