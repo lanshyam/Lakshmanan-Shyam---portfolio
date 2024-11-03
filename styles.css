@@ -1,125 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #a2c2e5); /* Gradient background */
     color: #333;
-    background-color: #f4f4f9;
-    line-height: 1.6;
+    transition: background 0.5s ease; /* Smooth transition */
 }
 
 .main-header {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent header */
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    background-color: #1e2a38;  /* Dark navy for header background */
-    color: #fff;
-    padding: 25px;
-    border-bottom: 5px solid #ff6b6b;  /* Accent border */
-}
-
-.main-header h1 {
-    font-size: 2.8em;
-    color: #ffce45;  /* Vibrant yellow for name */
-    transition: color 0.3s ease;  /* Smooth transition on hover */
-}
-
-.main-header h1:hover {
-    color: #ff6b6b;  /* Soft red on hover for added effect */
-}
-
-.main-header p {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #b0c4de;  /* Lighter blue-grey for the subtitle */
-}
-
-.main-header a {
-    color: #ffce45;  /* Vibrant yellow for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease;  /* Smooth transition */
-}
-
-.main-header a:hover {
-    color: #ff6b6b;  /* Soft red on hover */
-    text-decoration: underline;  /* Underline to emphasize hyperlink */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     margin-top: 10px;
 }
 
 .navbar a {
-    color: #ffce45;  /* Consistent yellow color */
+    color: #FFD700; /* Hyperlink color */
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth background and color change */
 }
 
 .navbar a:hover {
-    background-color: #ff6b6b;  /* Background changes on hover */
-    color: #fff;  /* Text turns white on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    color: white; /* Change text color on hover */
 }
 
 .content {
-    width: 90%;
-    max-width: 900px;
-    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .section {
-    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    margin: 20px auto;
+    max-width: 600px; /* Center content */
+    transition: transform 0.3s; /* Transform effect on hover */
 }
 
-.section h2 {
-    font-size: 1.8em;
-    color: #2c3e50;
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
-.card {
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.extra-info {
+    background-color: #e9ecef; /* Light gray background for additional info */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Center content */
 }
 
-.card h3 {
-    color: #3498db;
+h2, h3 {
+    color: #007BFF; /* Heading color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
 }
 
-.card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.card p, .card ul li {
-    font-size: 0.95em;
-}
-
-footer {
+.footer {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent footer */
+    color: white;
     text-align: center;
-    background-color: #1e2a38;
-    color: #fff;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Shadow above footer */
 }
 
-footer a {
-    color: #ffce45;
-    text-decoration: none;
+/* Button Styles */
+.button {
+    background-color: #007BFF; /* Button background color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Background color change on hover */
 }
 
-footer a:hover {
-    text-decoration: underline;
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
+
+.button-section {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.button {
+    background-color: #007BFF; /* Button background color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px; /* Space between buttons */
+    transition: background 0.3s ease; /* Background color change on hover */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
