@@ -1,14 +1,16 @@
+/* Base Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #f0f4f8, #a2c2e5); /* Gradient background */
+    background: linear-gradient(to bottom right, #f0f4f8, #a2c2e5);
     color: #333;
-    transition: background 0.5s ease; /* Smooth transition */
+    transition: background 0.5s ease;
 }
 
+/* Header */
 .main-header {
-    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent header */
+    background-color: rgba(0, 123, 255, 0.95);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -20,75 +22,90 @@ body {
 }
 
 .navbar a {
-    color: #FFD700; /* Hyperlink color */
+    color: #FFD700;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 15px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth background and color change */
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-    color: white; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
 }
 
+/* Main Content */
 .content {
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 .section {
-    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-    margin: 20px auto;
-    max-width: 600px; /* Center content */
-    transition: transform 0.3s; /* Transform effect on hover */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .extra-info {
-    background-color: #e9ecef; /* Light gray background for additional info */
+    background-color: #e9ecef;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 600px; /* Center content */
+    max-width: 700px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 h2, h3 {
-    color: #007BFF; /* Heading color */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+    color: #007BFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
 }
 
-.footer {
-    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent footer */
+/* Footer */
+footer, .footer {
+    background-color: rgba(0, 123, 255, 0.95);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Shadow above footer */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Button Styles */
+/* Buttons */
 .button {
-    background-color: #007BFF; /* Button background color */
+    background-color: #007BFF;
     color: white;
     border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease; /* Background color change on hover */
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .button-section {
@@ -96,29 +113,28 @@ h2, h3 {
     text-align: center;
 }
 
-.button {
-    background-color: #007BFF; /* Button background color */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px; /* Space between buttons */
-    transition: background 0.3s ease; /* Background color change on hover */
-}
-
-.button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Highlight specific skill categories with left alignment */
+/* Skill Highlights */
 .highlights {
     font-weight: bold;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Darker text color */
-    padding: 3px 6px;
-    border-radius: 4px;
-    margin-bottom: 4px; /* Space below the heading */
-    display: block; /* Make the category start on a new line */
+    background-color: #e0ecff;
+    color: #003366;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
 }
 
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .section, .extra-info {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px auto;
+        padding: 8px 12px;
+    }
+}
